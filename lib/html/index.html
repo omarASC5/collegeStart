@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>College Start</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBErxXLExGiBdxPtXpy_enXg0E70S1aRnw",
+    authDomain: "college-start.firebaseapp.com",
+    databaseURL: "https://college-start.firebaseio.com",
+    projectId: "college-start",
+    storageBucket: "college-start.appspot.com",
+    messagingSenderId: "1034410383148"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="../js/main.js" defer></script>
 </head>
 <body>
-    
+    <div class="sign-up-container">
+        <input type="email" placeholder="Email" id="userEmail">
+        <input type="password" placeholder="Password" id="userPassword">
+        <button id="signUpBtn">Sign Up</button>
+        <button id="logInBtn">Log In</button>
+        <button id="logOutBtn">Log Out</button>
+    </div>
 </body>
 </html>
