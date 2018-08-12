@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* top container */
+.top-container {
+    display: flex;
+    flex-direction: column;
+    height: 807px; 
+}
+
+/* nav bar */
+.nav-bar {      /* the box holding whole top nav bar */
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.nav-buttons {      /* the box that holds all the nav buttons */
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.nav-buttons a {    /* the nav buttons themselves */
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav-buttons a:hover {
+    background-color: blue;
+    color: white;
+}
+/* /nav bar */
+
+.get-started-box {      
+    display: flex;
+    height: 100%;
+    background: url(https://www.nyu.edu/content/dam/nyu/nyuStories/images/nyuwallpaper_desktop2560_blur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+#get-started-button {
+    align-self: flex-end;
+    margin-bottom: 250px;
+    border-style: solid;
+    border-color: white;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    height: 80px;
+    width: 200px;
+    font-size: 25px;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+
+#get-started-button:hover {
+    background-color: rgb(61, 116, 255, .8);
+}
+/* /top container */
+
+
+
+/* bottom container */
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.articles-box {
+    border-top: solid 2px black;
+}
+
+#article2 {
+    border-top: solid 2px black;    
+}
+
+#article3 {
+    border-top: solid 2px black;    
+}
+
+.about-us-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+}
+
+.roles-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+#face-img {
+    height: 200px;
+    width: 200px;
+}
+/* /bottom container */
+
+
+
+/* very bottom stuff */
+.very-bottom-stuff {
+    height: 300px;
+    background-color: #3d74ff;
+}
+
+
+
+
