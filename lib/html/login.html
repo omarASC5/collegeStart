@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+    </style>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,49 +25,23 @@
 </script>
     <script src="../js/main.js" defer></script>
 </head>
-<body>
-    <div class="sign-up-container">
-        
+    <body>
+        <div class="sign-in-container">
         <label for="userEmail">Email: </label>
         <input type="email" id="userEmail">
             <br>
-
+    
         <label for="userPassword">Password:</label>
             <input type="password" id="userPassword">
             <br>
+                <button id="logInBtn">Log In</button>
 
 
-        <label for="age">Age: </label>
-            <input type="number" id="age">
-            <br>
-
-        <label for="nameInput">Name: </label>
-            <input type="text" id="nameInput">
-            <br>
-
-        <label for="race">Race: </label>
-            <input type="text" id="Race">
-            <br>
-
-        <label for="school">Current School: </label>
-            <input type="text" id="school">
-            <br>
-
-        <label for="location">Location:</label>
-            <input type="text" id="location">
-            <br>
-
-        <label for="schoolType">School Type: </label>
-            <input type="text" id="schoolType">
-            <br>
-            
-        <label for="schoolSize">School Size: </label>
-            <input type="text" id="schoolSize">
-            <br>
-
-        <button id="signUpBtn">Create Account</button>
-    </div>
-    <button id="logInBtn">Log In</button>
-    <button id="logOutBtn">Log Out</button>
-</body>
+        <p>If you don't have an account sign up here: 
+            <a href="signup.html">
+                Create an Account Here!
+            </a>
+        </p>
+        </div>
+    </body>
 </html>
