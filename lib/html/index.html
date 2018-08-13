@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+</style>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>College Start</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
-    
-<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBErxXLExGiBdxPtXpy_enXg0E70S1aRnw",
-    authDomain: "college-start.firebaseapp.com",
-    databaseURL: "https://college-start.firebaseio.com",
-    projectId: "college-start",
-    storageBucket: "college-start.appspot.com",
-    messagingSenderId: "1034410383148"
-  };
-  firebase.initializeApp(config);
-</script>
-    <script src="../js/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="sign-up-container">
-        
-        <label for="userEmail">Email: </label>
-        <input type="email" id="userEmail">
-            <br>
+    <div class="main-container">
+        <div class="top-container">
+            <div class="nav-bar">
+                <div class="logo-box">
+                    <img id="logo" src="http://www.pngmart.com/files/4/Circle-PNG-File.png">
+                </div>
+                <div class="nav-buttons">
+                    <a href="#">Nav</a>
+                    <a href="#">Bar</a>
+                    <a href="#">Stuff</a>
+                    <a href="login.html">Login/Sign Up</a>
+                </div>
+            </div>
+            <div class="get-started-box">  
+                <button id="get-started-button">
+                    <strong>Get Started</strong> 
+                </button>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="news-box">
+                <div id="news-header">
+                    <h1>News</h1>
+                </div>
+                <div class="articles-box">
+                    <div id="article1">
+                        <h2>Article 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt felis augue, in dapibus nisi eleifend nec. Sed eu neque ipsum. Aenean a suscipit risus, sed mollis diam. Mauris eu lorem lorem. Ut tempus fringilla turpis, ac dapibus erat sodales et. Nunc lacinia mauris a mi semper fringilla. Sed laoreet.</p>
+                    </div>
+                    <div id="article2">
+                        <h2>Article 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt felis augue, in dapibus nisi eleifend nec. Sed eu neque ipsum. Aenean a suscipit risus, sed mollis diam. Mauris eu lorem lorem. Ut tempus fringilla turpis, ac dapibus erat sodales et. Nunc lacinia mauris a mi semper fringilla. Sed laoreet.</p>
+                    </div>
+                    <div id="article3">
+                        <h2>Article 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt felis augue, in dapibus nisi eleifend nec. Sed eu neque ipsum. Aenean a suscipit risus, sed mollis diam. Mauris eu lorem lorem. Ut tempus fringilla turpis, ac dapibus erat sodales et. Nunc lacinia mauris a mi semper fringilla. Sed laoreet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-box">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tellus dolor, sollicitudin sed scelerisque a, pellentesque auctor ligula. Aenean eget nisi quis dolor laoreet interdum. Curabitur lacinia dolor ut purus luctus auctor. Vivamus sit amet aliquam ligula, ut tempor augue. Cras placerat sapien nec nunc aliquet, eget tincidunt lacus sagittis. Quisque lobortis varius sodales. Maecenas sagittis, risus non sodales posuere, purus augue tincidunt justo, quis fringilla arcu ante vel sapien. Nullam in laoreet risus, a mattis diam. Sed magna ex, maximus non feugiat sit amet, sagittis sed dui. Cras aliquam sit amet ex non imperdiet. Mauris dapibus eros ac turpis tempor varius. Sed elementum ligula magna, vel eleifend ex rhoncus sit amet. Suspendisse magna leo, rhoncus sed lobortis ut, sagittis ac risus.<p>
+                <div class="roles-box">
+                    <div id="omar">
+                        <img id="face-img" src="http://www.pngmart.com/files/4/Circle-PNG-File.png">
+                        <h3>Omar Cobas<h3>
+                        <p>Role<p>
+                    </div>  
+                    <div id="zander">
+                        <img id="face-img" src="http://www.pngmart.com/files/4/Circle-PNG-File.png">                            
+                        <h3>Zander Jenkins<h3>
+                        <p>Role<p>
+                    </div>  
+                    <div id="justin">
+                        <img id="face-img" src="http://www.pngmart.com/files/4/Circle-PNG-File.png">                            
+                        <h3>Justin Bautista<h3>
+                        <p>Role<p>
+                    </div>  
+                    <div id="michael">
+                        <img id="face-img" src="http://www.pngmart.com/files/4/Circle-PNG-File.png">                            
+                        <h3>Michael Ramsigh<h3>
+                        <p>Role<p>
+                    </div>  
+                    <div id="khaled">
+                        <img id="face-img" src="http://www.pngmart.com/files/4/Circle-PNG-File.png">                            
+                        <h3>Khaled Muthana<h3>
+                        <p>Role<p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="very-bottom-stuff">
 
-        <label for="userPassword">Password:</label>
-            <input type="password" id="userPassword">
-            <br>
-
-
-        <label for="age">Age: </label>
-            <input type="number" id="age">
-            <br>
-
-        <label for="nameInput">Name: </label>
-            <input type="text" id="nameInput">
-            <br>
-
-        <label for="race">Race: </label>
-            <input type="text" id="Race">
-            <br>
-
-        <label for="school">Current School: </label>
-            <input type="text" id="school">
-            <br>
-
-        <label for="location">Location:</label>
-            <input type="text" id="location">
-            <br>
-
-        <label for="schoolType">School Type: </label>
-            <input type="text" id="schoolType">
-            <br>
-            
-        <label for="schoolSize">School Size: </label>
-            <input type="text" id="schoolSize">
-            <br>
-
-        <button id="signUpBtn">Create Account</button>
+        </div>
     </div>
-    <button id="logInBtn">Log In</button>
-    <button id="logOutBtn">Log Out</button>
 </body>
 </html>
