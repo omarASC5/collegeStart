@@ -1,8 +1,46 @@
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
 }
+
+/* display on smaller screen */
+@media screen and (max-width: 600px) {
+
+    #logo{
+        width: 100px;
+        margin: 20px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .dropdown-content {
+        transform: translate(0px, 10px) !important;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center !important;
+    }
+
+    .nav-buttons a {
+        padding: 10px !important;
+    }
+
+    .roles-box {
+        flex-direction: column;
+    }
+}
+/* /display on smaller screen */
+
 
 
 /* top container */
@@ -22,16 +60,16 @@ body {
 }
 
 #logo {
-    height: 70px;
-    width: 70px;
-    margin-left: 30px;
-    margin-top: 5px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .nav-buttons {      /* the box that holds all the nav buttons */
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    align-items: flex-end;
+    width: 80%;
 }
 
 .nav-buttons a {    /* the nav buttons themselves */
@@ -46,15 +84,60 @@ body {
 }
 
 .nav-buttons a:hover {
+    color: blue;
+}
+
+.dropdown {     /* opportunities area */
+    padding: 30px 18px;
+}
+
+.dropbtn {      /* opportunities itself */
+    background: none;
+    color: black;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+} 
+ 
+.dropdown-content {     /* dropdown box holding the dropdown content */
+    display: none;
+    position: absolute;
+    transform: translate(-17px, 30px);
+    background-color: #f1f1f1;
+    width: auto;
+    box-shadow: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+ 
+.dropdown-content a {      /* dropdown boxes themselves */
+    color: black;
+    padding: 12px 27px;
+    text-decoration: none;
+    width: auto;
+}
+ 
+.dropdown-content a:hover {     /* hover for dropdown boxes themselves */
     background-color: blue;
     color: white;
+}
+
+.dropdown:hover .dropdown-content {     /* dropdown box holding dropdown content */
+    display: flex;
+    flex-direction: column;    
+}
+ 
+.dropdown:hover .dropbtn {      /* opportunities button */
+    color: blue;
 }
 /* /nav bar */
 
 .get-started-box {      
     display: flex;
     height: 100%;
-    background: url(https://www.nyu.edu/content/dam/nyu/nyuStories/images/nyuwallpaper_desktop2560_blur.jpg);
+    background: url(https://www.nyu.edu/content/dam/nyu/nyuStories/images/nyuwallpaper_desktop2560_blur.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
