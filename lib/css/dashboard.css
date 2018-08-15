@@ -8,7 +8,7 @@ body {
 @media screen and (max-width: 1024px) {
 
     .logo-box {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
     }
 
     #logo{
@@ -48,17 +48,13 @@ body {
     }
 
     .bottom-container {
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
         text-align: center;
     }
 
     .connect-box {
         width: auto !important;
-    }
-
-    .roles-box {
-        flex-direction: column;
     }
 }
 /* /display on smaller screen */

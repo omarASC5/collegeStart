@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* display on smaller screen */
+@media screen and (max-width: 1024px) {
+
+    .logo-box {
+        padding-bottom: 30px; 
+    }
+
+    #logo{
+        width: 100px;
+        margin: 20px; 
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px; 
+        padding-bottom: 100px; 
+    }
+
+    .dropdown {
+        padding: 10px !important;
+    }
+
+    .dropbtn {
+        padding: 0px !important;
+    }
+
+    .dropdown-content {
+        transform: translate(-6px, 10px) !important;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center !important;
+    }
+
+    .nav-buttons a {
+        padding: 10px !important;
+    }
+
+    #searchBar {
+        width: auto !important;
+    }
+
+    .college1 {
+        flex-direction: column !important;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .college1Description {
+        padding: 0 !important;
+    }
+
+    .college2 {
+        flex-direction: column !important;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .college2Description {
+        padding: 0 !important;
+    }
+
+    .college3 {
+        flex-direction: column !important;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .college3Description {
+        padding: 0 !important;
+    }
+}
+/* /display on smaller screen */
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 807px; 
+ }
+
+/* nav bar */
+.nav-bar {      /* the box holding whole top nav bar */
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.nav-buttons {      /* the box that holds all the nav buttons */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+}
+
+.nav-buttons a {    /* the nav buttons themselves */
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+.nav-buttons a:hover {
+    color: blue;
+}
+
+.dropdown {
+    padding: 14px 50px;
+}
+
+.dropbtn {
+    background-color:white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+ }
+ 
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: auto;
+    box-shadow: rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(-8px, 14px);
+ }
+ 
+ .dropdown-content a {
+    color: black;
+    padding: 12px 27px;
+    text-decoration: none;
+    width: auto;
+ }
+ 
+ .dropdown-content a:hover {
+    background-color: blue;
+    color: white;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .dropdown:hover .dropbtn {
+     color: blue;
+ }
+/* /nav bar */
+
+.searchBar-container {      
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: url(../img/architecture-building-campus-356086.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+#find-colleges {
+    border-bottom: solid 2px black;
+}
+
+.searchBar-box {
+    align-self: flex-end;
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#searchBar {
+    width: 600px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+/* content */
+.content-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* college */
+.college1 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.college1:hover {
+    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 8px 12px 26px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+#college1-pic {
+    height: 200px;
+    width: 200px;
+}
+
+.college1Description {
+    padding-left: 30px;
+}
+
+.college2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.college2:hover {
+    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 8px 12px 26px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+#college2-pic {
+    height: 200px;
+    width: 200px;
+}
+
+.college2Description {
+    padding-left: 30px;
+}
+
+.college3 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.college3:hover {
+    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 8px 12px 26px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+#college3-pic {
+    height: 200px;
+    width: 200px;
+}
+
+.college3Description {
+    padding-left: 30px;
+}
+/* /colleges */
+
+/* #picture{
+    width:200px;
+   }
+   div{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+   }
+   .fullContainer{
+    flex-direction: column;
+   }
+   .searchBarDiv{
+   display: flex;
+   align-content: center;
+   
+   }
+   .searchBar{
+    width:200px;
+   
+   }
+   .collegesContainer{
+    display: flex;
+    flex-direction: column;
+   }
+   .colleges1{
+   
+    height: 100px;
+    border: 5px solid black;
+    padding: 25px;
+    margin-top: 20px;
+   }
+   .colleges2{
+   
+    height: 100px;
+    border: 5px solid black;
+    padding: 25px;
+    margin-top: 20px;
+   } */

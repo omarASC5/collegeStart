@@ -34,10 +34,12 @@ html {
 
 #userEmail {
     height: 25px;
+    padding-left: 10px;
 }
 
 #userPassword {
     height: 25px;
+    padding-left: 10px;
 }
 
 #logInBtn {
