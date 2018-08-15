@@ -146,7 +146,7 @@ body {
 #get-started-button {
     align-self: flex-end;
     margin-bottom: 250px;
-    border-radius: 12px;
+    border-radius: 100px;
     border-style: solid;
     border-color: white;
     text-decoration: none;
@@ -157,6 +157,7 @@ body {
     font-size: 25px;
     transition: 500ms;
     transition-timing-function: ease-out;
+    cursor: pointer;
 }
 
 #get-started-button:hover {

@@ -51,6 +51,7 @@ html {
     transition: 500ms;
     transition-timing-function: ease-out;
     cursor: pointer;
+    border-radius: 100px;
 }
 
 #logInBtn:hover {
