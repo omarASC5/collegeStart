@@ -144,6 +144,13 @@ body {
 }
 
 #get-started-button {
+    /* inside button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    
+    /* button */
     align-self: flex-end;
     margin-bottom: 250px;
     border-radius: 100px;

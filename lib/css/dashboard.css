@@ -167,6 +167,13 @@ body {
     justify-content: center;
  }
  #get-started-button {
+    /* inside button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+     
+    /* button */
     align-self: flex-end;
     margin-bottom: 250px;
     border-radius: 100px;
@@ -195,6 +202,7 @@ body {
     flex-direction: row;
     margin-bottom: 50px;
  }
+
  .events-box {
     display: flex;
     flex-direction: column;
@@ -202,8 +210,8 @@ body {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
  }
+
  .articles-box {
     border-top: solid 2px black;
  }
