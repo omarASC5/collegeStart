@@ -1,0 +1,63 @@
+html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url(../img/advice-advise-advisor-7096.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+.sign-in-container {
+    display: flex;
+    margin-top: 20px;
+    padding: 60px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+#userEmail {
+    height: 25px;
+}
+
+#userPassword {
+    height: 25px;
+}
+
+#logInBtn {
+    border-color: blue;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    background-color: whitesmoke;
+    transition: 500ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+#logInBtn:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+p {
+    margin-top: 30px;
+}

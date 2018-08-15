@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+    </style>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>College Start</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/login.css" />
+    
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBErxXLExGiBdxPtXpy_enXg0E70S1aRnw",
+    authDomain: "college-start.firebaseapp.com",
+    databaseURL: "https://college-start.firebaseio.com",
+    projectId: "college-start",
+    storageBucket: "college-start.appspot.com",
+    messagingSenderId: "1034410383148"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="../js/login.js" defer></script>
+</head>
+    <body>
+        <div class="main-container">
+            <div class="logo-box">
+                <img id="logo" src="../img/logo_original.jpg">
+            </div>
+            <div class="sign-in-container">
+                <label for="userEmail">Email: </label>
+                <input type="email" id="userEmail">
+                    <br>
+            
+                <label for="userPassword">Password:</label>
+                    <input type="password" id="userPassword">
+                    <br>
+                        <button id="logInBtn">Log In</button>
+
+
+                <p>If you don't have an account sign up here: 
+                    <a href="signup.html">
+                        Create an Account Here!
+                    </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

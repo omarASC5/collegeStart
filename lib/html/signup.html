@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+            </style>
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>College Start</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" media="screen" href="../css/signup.css" />
+            
+        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBErxXLExGiBdxPtXpy_enXg0E70S1aRnw",
+            authDomain: "college-start.firebaseapp.com",
+            databaseURL: "https://college-start.firebaseio.com",
+            projectId: "college-start",
+            storageBucket: "college-start.appspot.com",
+            messagingSenderId: "1034410383148"
+          };
+          firebase.initializeApp(config);
+        </script>
+            <script src="../js/signup.js" defer></script>
+        </head>
+    <body>
+        <div class="main-container">
+            <div class="logo-box">
+                <img id="logo" src="../img/logo_original.jpg">
+            </div>
+            <div class="sign-up-container">
+                <h1>Create An Account</h1>
+                <h2>Personal</h2>
+                <label for="userEmail">Email: </label>
+                <input type="email" id="userEmail">
+                    <br>
+        
+                <label for="userPassword">Password:</label>
+                    <input type="password" id="userPassword">
+                    <br>
+            
+            
+                <label for="nameInput">Name: </label>
+                    <input type="text" id="nameInput">
+                    <br>
+
+                <!-- Dropdown -->
+                <label for="age">Age: </label>
+                    <input type="number" id="age">
+                    <br>
+            
+                <!-- Dropdown -->
+                <label for="ethnicity">Ethnicity: </label>
+                    <input type="text" id="ethnicity">
+                    <br>
+        
+                <label for="school">Current School: </label>
+                    <input type="text" id="school">
+                    <br>
+            
+                <!-- City and State - text -->
+                <h2>Location</h2>
+                <label for="city">City:</label>
+                    <input type="text" id="city">
+                    <br>
+
+                    <label for="state">State:</label>
+                    <input type="text" id="state">
+                    <br>
+            
+                <!-- dropdown -->
+                <h2>College Preference</h2>
+                <label for="schoolType">School Type: </label>
+                    <input type="text" id="schoolType">
+                    <br>
+                        
+                <!-- dropdown -->
+                <label for="schoolSize">School Size: </label>
+                    <input type="text" id="schoolSize">
+                    <br>
+            
+                <button id="signUpBtn">Create Account</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -2,10 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
-}
+ }
 
 /* display on smaller screen */
 @media screen and (max-width: 1024px) {
+
+    .logo-box {
+        padding-bottom: 30px;
+    }
 
     #logo{
         width: 100px;
@@ -18,10 +22,19 @@ body {
         padding-bottom: 50px;
         justify-content: center;
         margin-bottom: 20px;
+        padding-bottom: 100px;
+    }
+
+    .dropdown {
+        padding: 10px !important;
+    }
+
+    .dropbtn {
+        padding: 0px !important;
     }
 
     .dropdown-content {
-        transform: translate(0px, 10px) !important;
+        transform: translate(-6px, 10px) !important;
     }
 
     .nav-buttons {
@@ -32,6 +45,16 @@ body {
 
     .nav-buttons a {
         padding: 10px !important;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .connect-box {
+        width: auto !important;
     }
 
     .roles-box {
@@ -47,9 +70,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 807px; 
-}
-
-/* nav bar */
+ }
+ /* nav bar */
 .nav-bar {      /* the box holding whole top nav bar */
     display: flex;
     background-color: white;
@@ -79,71 +101,72 @@ body {
     font-size: 20px;
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px; 
 }
 
 .nav-buttons a:hover {
     color: blue;
 }
 
-.dropdown {     /* opportunities area */
-    padding: 30px 18px;
+.dropdown {
+    padding: 14px 50px;
 }
 
-.dropbtn {      /* opportunities itself */
-    background: none;
+.dropbtn {
+    background-color:white;
     color: black;
+    padding: 16px;
     font-size: 16px;
     border: none;
+    text-align: center;
     text-decoration: none;
     font-size: 20px;
     width: 100%;
     font-family: 'Titillium Web', sans-serif;
-} 
+ }
  
-.dropdown-content {     /* dropdown box holding the dropdown content */
+ .dropdown-content {
     display: none;
     position: absolute;
-    transform: translate(-17px, 30px);
     background-color: #f1f1f1;
     width: auto;
     box-shadow: rgba(0,0,0,0.2);
     z-index: 1;
-}
+    transform: translate(-8px, 14px);
+ }
  
-.dropdown-content a {      /* dropdown boxes themselves */
+ .dropdown-content a {
     color: black;
     padding: 12px 27px;
     text-decoration: none;
     width: auto;
-}
+ }
  
-.dropdown-content a:hover {     /* hover for dropdown boxes themselves */
+ .dropdown-content a:hover {
     background-color: blue;
     color: white;
-}
-
-.dropdown:hover .dropdown-content {     /* dropdown box holding dropdown content */
-    display: flex;
-    flex-direction: column;    
-}
+ }
  
-.dropdown:hover .dropbtn {      /* opportunities button */
-    color: blue;
-}
+ .dropdown:hover .dropdown-content {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .dropdown:hover .dropbtn {
+     color: blue;
+ }
 /* /nav bar */
 
-.get-started-box {      
+ .get-started-box {      
     display: flex;
     height: 100%;
-    background: url(../img/architecture-building-campus-356086.jpg); 
+    background: url(../img/architecture-building-campus-356086.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:fixed;
     justify-content: center;
-}
-
-#get-started-button {
+ }
+ #get-started-button {
     align-self: flex-end;
     margin-bottom: 250px;
     border-radius: 12px;
@@ -157,86 +180,81 @@ body {
     font-size: 25px;
     transition: 500ms;
     transition-timing-function: ease-out;
-}
-
-#get-started-button:hover {
+ }
+ #get-started-button:hover {
     background-color: rgb(61, 116, 255, .8);
-}
-/* /top container */
+ }
+ /* /top container */
 
 
 
-/* bottom container */
-.bottom-container {
+ /* bottom container */
+ .bottom-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+ }
+ .events-box {
     display: flex;
     flex-direction: column;
-}
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+ }
+ .articles-box {
+    border-top: solid 2px black;
+ }
 
-.news-box {
+ #article1 {  
+    cursor: pointer;
+ }
+
+ #article1:hover {
+    color: blue;
+ }
+
+ #article2 {
+    border-top: solid 2px black; 
+    cursor: pointer;   
+ }
+
+ #article2:hover {
+    color: blue;
+ }
+
+ #article3 {
+    border-top: solid 2px black;    
+    cursor: pointer;   
+ }
+
+ #article3:hover {
+    color: blue;
+ }
+ 
+ .connect-box {
+    width: 70%;
     display: flex;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-}
+ }
 
-.articles-box {
-    border-top: solid 2px black;
-}
-
-#article1 {
-    cursor: pointer;
-}
-
-#aricle1:hover {
-    color: blue;
-}
-
-#article2 {
-    border-top: solid 2px black;  
-    cursor: pointer;
-}
-
-#aricle2:hover {
-    color: blue;
-}
-
-#article3 {
-    border-top: solid 2px black;  
-    cursor: pointer;
-}
-
-#aricle3:hover {
-    color: blue;
-}
-
-.about-us-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px;
-}
-
-.roles-box {
-    display: flex;
-    justify-content: space-around;
-}
-
-#face-img {
-    height: 200px;
-    width: 200px;
-}
-/* /bottom container */
+ .connections {
+     border-top: solid 2px black;
+     display: flex;
+     flex-direction: column;
+ }
+ /* /bottom container */
 
 
 
-/* very bottom stuff */
-.very-bottom-stuff {
+ /* very bottom stuff */
+ .very-bottom-stuff {
     height: 300px;
-    background-color: blue;   /* #3d74ff */
-}
-
-
-
-
+    background-color: #3d74ff;
+ }
+ 
